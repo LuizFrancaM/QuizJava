@@ -6,7 +6,6 @@
 package br.com.fatecpg.quiz;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  *
