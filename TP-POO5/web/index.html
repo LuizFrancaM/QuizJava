@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .caixa{
+                font-weight:bold;
+                padding:20px 20px;
+                border-radius:5px;
+            }
+            #titulo{
+                background-color: #2aabd2;
+                text-align: center;
+                color: white;
+                opacity:0.7;
+            }
+            #btPrincipal{
+                margin-top:330px;
+                height:100px;
+                width:200px;
+            }
+            .gh {
+                font-size:30px;
+                display: inline-block;
+                width: 300px;
+                font-weight: bold;
+                margin-top:10px;
+                padding: 8px;
+                color: #000;
+                text-align: center;
+                border:2px solid white;
+                outline: none;
+                text-decoration: none !important;
+                transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
+          }
+          .gh:hover,
+            .gh:active {
+                background-color: #2aabd2;
+                color: #fff;
+                transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+          }
+        </style>
+        <script>
+            function enviar(){
+                var x = document.getElementById("nome").value;
+                if(!!x){
+                    document.F1.submit();
+                }
+            }
+        </script>
+        <title>TP5 - POO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-image: url('js/quiz.jpg');background-size:cover;background-repeat:   no-repeat; ">
+       
+    <center>    
+        <div class="jumbotron" id="titulo">
+            <h1>Vamos fazer o Quiz !</h1>
+        </div>
+            <form name="F1" style="margin-top:300px;" action="home.jsp">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" id="campo">
+                        <h2 class="caixa" style='color:black'>Nome : &nbsp <input type='text' name="nome" style="width: 220px" id="nome"/></h2>
+                        <input class="gh" name="começar" onclick="enviar()" value="Começar!"/>
+                    </div>
+                </div>
+            </form>
+    </center>
+    </body>
+</html>
